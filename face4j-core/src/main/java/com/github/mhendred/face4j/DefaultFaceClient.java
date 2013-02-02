@@ -64,17 +64,17 @@ import com.github.mhendred.face4j.response.UsersResponseImpl;
  * @author Marlon Hendred 
  * 
  * @see {@link FaceClient}  
- * @see <a href="http://developers.face.com/docs/">Developer's page</a>
+ * @see <a href="http://www.skybiometry.com/Documentation">Developer's page</a>
  */
 public class DefaultFaceClient implements FaceClient, Serializable
 {	
 	/**
 	 * Default API end point @TODO: set from properties
 	 */
-	private static final String API_ENDPOINT = "http://api.face.com";
+	private static final String API_ENDPOINT = "http://api.skybiometry.com/fc";
 	
 	/**
-	 * Handles {@code POST}s to the face.com endpoint
+	 * Handles {@code POST}s to the SkyBiometry Face Detection and Recognition API endpoint
 	 */
 	private final Responder http;
 	
@@ -111,14 +111,14 @@ public class DefaultFaceClient implements FaceClient, Serializable
 	}
 	
 	/**
-	 * Constructs a Face.com API client pointing to {@code host}. You need to obtain an API key/secret pair.
-	 * You can get an API key/secret from face.com 
+	 * Constructs a SkyBiometry Face Detection and Recognition API client pointing to {@code host}. You need to obtain an API key/secret pair.
+	 * You can get an API key/secret from https://www.skybiometry.com/Account
 	 * 
 	 * @param apiKey Your aplication's API key
 	 * @param apiSecret Your applications API secret
 	 *  
 	 * @see {@link Responder}
-	 * @see <a href="http://developers.face.com/docs/">Developer's page</a> for information on obtaining an
+	 * @see <a href="https://www.skybiometry.com/Documentation">Developer's page</a> for information on obtaining an
 	 * 		API key/secret
 	 */
 	public DefaultFaceClient (final String apiKey, final String apiSecret, final Responder responder)

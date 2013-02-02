@@ -17,12 +17,12 @@ import com.github.mhendred.face4j.model.Photo;
 public class ClientExample 
 {
 	/**
-	 * Your face.com API key
+	 * Your SkyBiometry API key
 	 */
 	protected static final String API_KEY = "";
 	
 	/**
-	 * Your face.com API secret
+	 * Your SkyBiometry API secret
 	 */
 	protected static final String API_SEC = "";
 
@@ -32,7 +32,7 @@ public class ClientExample
 	protected static final String URL_WITH_FACES = "http://seedmagazine.com/images/uploads/attractive_article.jpg";
 
 	/**
-	 * Your face.com API namespace
+	 * Your SkyBiometry API namespace
 	 */
 	protected static final String NAMESPACE = "araucana";
 
@@ -51,8 +51,8 @@ public class ClientExample
     	 * 
     	 * You can pass more than one URL (comma delimited String) or you can pass an image file    
     	 * 
-    	 * @see http://developers.face.com/docs/api/faces-detect/
-    	 * @see http://developers.face.com/docs/api/faces-recognize/
+    	 * @see https://www.skybiometry.com/Documentation#faces/detect
+    	 * @see https://www.skybiometry.com/Documentation#faces/recognize
     	 */
     	Photo photo = faceClient.detect(URL_WITH_FACES).get(0);
     

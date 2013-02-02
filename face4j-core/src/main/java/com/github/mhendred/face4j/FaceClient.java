@@ -41,13 +41,13 @@ import com.github.mhendred.face4j.response.TrainResponse;
 import com.github.mhendred.face4j.response.UsersResponse;
 
 /**
- * Interface which describes how a class interacting with the face.com API would behave. This interface
+ * Interface which describes how a class interacting with the SkyBiometry Face Detection and Recognition API would behave. This interface
  * currently does not support callbacks or tagging passwords. If the {@link AndroidFaceClient} implementation 
  * does not meet your needs, simply extend and re-implement
  *  
  * @author Marlon Hendred 
  * 
- * @see <a href="http://developers.face.com/docs/">Developer's page</a>
+ * @see <a href="https://www.skybiometry.com/Documentation">Developer's page</a>
  */
 public interface FaceClient extends Serializable
 {	
@@ -55,7 +55,7 @@ public interface FaceClient extends Serializable
 	 * Returns tags for detected faces in a single photo, with geometric information of the tag, 
 	 * eyes, nose and mouth, as well as the gender, glasses, and smiling attributes.
 	 * 
-	 * @param imageUrl {@link File} of the image to be uploaded to face.com for detection
+	 * @param imageUrl {@link File} of the image to be uploaded to SkyBiometry for detection
 	 * 
 	 * @return {@link Photo} object encapsulating response
 	 * 
@@ -84,7 +84,7 @@ public interface FaceClient extends Serializable
 	/**
 	 * Convenience method for detecting faces in an image file
 	 * 
-	 * @param imageUrl {@link File} of the image to be uploaded to face.com for detection
+	 * @param imageUrl {@link File} of the image to be uploaded to SkyBiometry for detection
 	 * @param uids comma delimited {@code String} of user IDs to search for in the photos passed in the request
 	 * 
 	 * @return {@link Photo} 
@@ -117,7 +117,7 @@ public interface FaceClient extends Serializable
 	 * Attempts to detect, group, and optionally recognize one or more user IDs' faces in a image. Useful when dealing 
 	 * with files.
 	 * 
-	 * @param imageUrl {@link File} of the image to be uploaded to face.com for detection
+	 * @param imageUrl {@link File} of the image to be uploaded to SkyBiometry for detection
 	 * @param uids comma delimited {@code String} of user IDs to search for in the photos passed in the request
 	 * 
 	 * @return {@link Photo} 
@@ -194,7 +194,7 @@ public interface FaceClient extends Serializable
 	 * @throws FaceClientException
 	 * 
 	 * 
-	 * @see <a href="http://developers.face.com/docs/api/tags-save/">tags.get</a> page for more information on this call
+	 * @see <a href="https://www.skybiometry.com/Documentation#tags/get">tags.get</a> page for more information on this call
 	 **/
 	public List<Photo> getTags (
 			final String pids, 
@@ -240,7 +240,7 @@ public interface FaceClient extends Serializable
 	 * @throws FaceClientException
 	 * 
 	 * 
-	 * @see this <a href="http://developers.face.com/docs/api/tags-add/">tags.add</a> page for more information
+	 * @see this <a href="https://www.skybiometry.com/Documentation#tags/add">tags.add</a> page for more information
 	 */
 	public void addTag (
 			final String url, 
@@ -283,7 +283,7 @@ public interface FaceClient extends Serializable
 	 * @throws FaceClientException if there was a client side error
 	 * 
 	 * 
-	 * @see this <a href="http://developers.face.com/docs/api/tags-remove/">tags.remove</a> page for more information
+	 * @see this <a href="https://www.skybiometry.com/Documentation#tags/remove">tags.remove</a> page for more information
 	 * 
 	 */
 	public List<RemovedTag> removeTags (final String tids) throws FaceClientException, FaceServerException;
@@ -351,7 +351,7 @@ public interface FaceClient extends Serializable
 	 * @param oauthSecret
 	 * @param oauthToken
 	 * 
-	 * @see <a href="http://developers.face.com/docs/auth/">Auth</a> page for more information.
+	 * @see <a href="https://www.skybiometry.com/Documentation">Auth</a> page for more information.
 	 */
 	public void setTwitterOauth(final String oauthUser, final String oauthSecret, final String oauthToken);
 	

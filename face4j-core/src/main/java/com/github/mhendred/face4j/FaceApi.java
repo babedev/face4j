@@ -23,7 +23,7 @@
 package com.github.mhendred.face4j;
 
 /**
- * Holds the path to the resources on api.face.com
+ * Holds the path to the resources on api.skybiometry.com/fc
  * 
  * @author Marlon Hendred
  *

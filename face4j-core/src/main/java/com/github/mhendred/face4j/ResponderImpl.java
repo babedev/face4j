@@ -51,7 +51,7 @@ import com.github.mhendred.face4j.exception.FaceServerException;
 
 /**
  * Default implementation of {@link Responder} interface. It seems as though
- * face.com always returns an HTTP status code of 200 even for 404 not founds.
+ * SkyBiometry always returns an HTTP status code of 200 even for 404 not founds.
  * This is why there is no need to check the status line.
  * 
  * @author Marlon Hendred

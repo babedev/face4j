@@ -1,5 +1,6 @@
 ---------------------------------------------------------------------------
-face4j is a Java client library for face.com licensed under the MIT License
+face4j is a Java client library for SkyBiometry Face Detection and
+Recognition API licensed under the MIT License
 ---------------------------------------------------------------------------
 
 Author: Marlon Hendred
