@@ -71,7 +71,7 @@ public class DefaultFaceClient implements FaceClient, Serializable
 	/**
 	 * Default API end point @TODO: set from properties
 	 */
-	private static final String API_ENDPOINT = "http://api.skybiometry.com/fc";
+	private static final String API_ENDPOINT = "http://api.skybiometry.com";
 	
 	/**
 	 * Handles {@code POST}s to the SkyBiometry Face Detection and Recognition API endpoint

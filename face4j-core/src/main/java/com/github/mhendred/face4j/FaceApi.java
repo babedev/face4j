@@ -30,19 +30,19 @@ package com.github.mhendred.face4j;
  */
 public enum FaceApi 
 {
-	RECOGNIZE("/faces/recognize.json", true),
-	DETECT("/faces/detect.json", false),
-	GROUP("/faces/group.json", true),
-	TRAIN("/faces/train.json", true),
-	STATUS("/faces/status.json",true),
-	REMOVE_TAGS("/tags/remove.json", true),
-	SAVE_TAGS("/tags/save.json", true),
-	GET_TAGS("/tags/get.json", true),
-	ADD_TAG("/tags/add.json", true),
-	LIMITS("/account/limits.json", false),
-	NAMESPACES("/account/namespaces.json", false),
-	USERS("/account/users.json", false),
-	FACEBOOK("/facebook/get.json", true);
+	RECOGNIZE("/fc/faces/recognize.json", true),
+	DETECT("/fc/faces/detect.json", false),
+	GROUP("/fc/faces/group.json", true),
+	TRAIN("/fc/faces/train.json", true),
+	STATUS("/fc/faces/status.json",true),
+	REMOVE_TAGS("/fc/tags/remove.json", true),
+	SAVE_TAGS("/fc/tags/save.json", true),
+	GET_TAGS("/fc/tags/get.json", true),
+	ADD_TAG("/fc/tags/add.json", true),
+	LIMITS("/fc/account/limits.json", false),
+	NAMESPACES("/fc/account/namespaces.json", false),
+	USERS("/fc/account/users.json", false),
+	FACEBOOK("/fc/facebook/get.json", true);
 	
 	private final String path;
 	
