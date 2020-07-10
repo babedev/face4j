@@ -4,10 +4,10 @@
   <parent>
     <artifactId>face4j</artifactId>
     <groupId>com.github.mhendred.face4j</groupId>
-    <version>1.6.3-SNAPSHOT</version>
+    <version>1.6.4</version>
   </parent>
   <artifactId>face4j-core</artifactId>
-  <version>1.6.3-SNAPSHOT</version>
+  <version>1.6.4</version>
   <name>face4j-core</name>
   <packaging>jar</packaging>
   <description>A Java client for SkyBiometry Face Detection and Recognition REST API</description>
